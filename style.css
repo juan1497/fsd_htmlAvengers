@@ -1,0 +1,46 @@
+body{
+    margin: 0 auto;
+}
+nav{ /* le da las propiedades de flex*/
+    display:flex;
+    justify-content:space-around;
+    margin:10px 0px;
+    
+}
+nav a{
+    text-decoration:none;
+    color:black;
+}
+
+nav a:first-child:before{
+    content:"🦸";
+}
+nav a:last-child:before{
+    content:"Ⓜ️";
+}
+nav a:nth-child(2):before{
+    content:"🤓";
+}
+.hero {
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.flex-container{
+    display:flex;
+    list-style-type:none
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.wrap li{
+    background: gold;
+}
+.flex-item{
+    width: 30%;
+    margin:10px;
+}
+/* .flex-item:before{
+    content:"🔥"
+} */
